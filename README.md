@@ -35,6 +35,6 @@ After cloning and pulling the repos, make sure to also add them in the MATLAB se
 The software in this repository is put under an APACHE licensing scheme
 
 ## Reference
-If you use NICEgame or any code in this repo, please cite the original publciation:
+If you use NICEgame (or any code in this repo) for your research, please consider citing the original publciation:
 
 > E. Vayena, A. Chiappino-Pepe, H. MohammadiPeyhani, Y. Francioli, N. Hadadi, M. Ataman, J. Hafner, S. Pavlou, & V. Hatzimanikatis, A workflow for annotating the knowledge gaps in metabolic reconstructions using known and hypothetical reactions, Proc. Natl. Acad. Sci. U.S.A. 119 (46) e2211197119, https://doi.org/10.1073/pnas.2211197119 (2022).
