@@ -3,16 +3,24 @@
 This repo contains code and files used during a 2 week visit to the LCSB lab. The goal was to get hands on experience using the NICEgame workflow to curate metabolic models based on experimental data. Through these exercises we also learn about thermodynamic-based flux analysis (TFA), BridgIT, and ATLASx.
 
 - Exercise 1: matTFA tutorial
-    - Basics of converting GEM for TFA, compared TFA and FBA results to show that TFA is more restrictive
-    - Key files
+    - Goal
+         - Basics of TFA: prepare GEM for TFA, compare TFA and FBA results to show that TFA is more restrictive
+    - Files
          - thermo_data.mat: database containing chemical information for ~18k compounds (e.g. mass, charge, pKa, deltaG_formation)
-    - Key functions
+    - Functions
          - prepModelforTFA(): inputs model + thermo_data, calculates gibbs energies of reactions, outputs prepared model
          - convToTFA(): inputs prepared model, adds new thermodynamic constraints based on gibbs energies, outputs converted model
          - addNetFluxVariables(): inputs converted model, adds net flux variables and constraints to model, outputs TFA-ready model
          - solveTFAmodelCplex(): inputs TFA-ready model, outputs TFA solution
 - Exercise 2: NICEgame tutorial
-    - KO reaction in iML1515, merge model with BiGG database, generate alternative gapfilling solutions
+    - Goal
+         - NICEgame basics: KO reaction in iML1515 model, merge model with BiGG database, generate alternative gapfilling solutions
+    - Files
+         - iML1515.mat: *E. coli* model
+         - BiGG_DB.mat: BiGG database of reactions
+    - Functions
+         - PrepareForGapFilling(): inputs GEM and reaction database, outputs merged model
+         - gapFilling(): inputs merged model, outputs alternative solutions for gapfilling
 - Exercise 3: Essentiality prediction
     - Single reaction essentiality (FBA & TFA), single gene essentiality (FBA & TFA)
 - Exercise 4: Essentiality evaluation
