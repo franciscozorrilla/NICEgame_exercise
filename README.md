@@ -1,6 +1,6 @@
 # 🏓 NICEgame exercise 🏓
 
-This repo contains code and files used during a 2 week visit to the LCSB lab. The goal was to get hands on experience using the [NICEgame](https://www.pnas.org/doi/10.1073/pnas.2211197119) workflow to curate metabolic models based on experimental data. Through these exercises we also learn about thermodynamic-based flux analysis (TFA), BridgIT, and ATLASx.
+This repo contains code and files used during a 2 week visit to the [EPFL LCSB](https://www.epfl.ch/labs/lcsb/). The goal was to get hands on experience using the [NICEgame](https://www.pnas.org/doi/10.1073/pnas.2211197119) workflow to curate metabolic models based on experimental data. Through these exercises we also learn about thermodynamic-based flux analysis (TFA), BridgIT, and ATLASx.
 
 ### 🌡️ Exercise 1: matTFA tutorial
 - Goal
@@ -12,10 +12,11 @@ This repo contains code and files used during a 2 week visit to the LCSB lab. Th
   - `convToTFA()`: inputs prepared model, adds new thermodynamic constraints based on gibbs energies, outputs converted model
   - `addNetFluxVariables()`: inputs converted model, adds net flux variables and constraints to model, outputs TFA-ready model
   - `solveTFAmodelCplex()`: inputs TFA-ready model, outputs TFA solution
+  - `optimizeCbModel()`: inputs FBA model, outputs FBA solution
 
 ### 🐤 Exercise 2: NICEgame tutorial
 - Goal
-  - Learn the basics of NICEgame: KO reaction in iML1515 model, merge model with BiGG database, generate alternative gapfilling solutions
+  - Learn the basics of NICEgame: knockout reaction in iML1515 model (e.g. 5DOAN), merge model with BiGG database, generate alternative gapfilling solutions
 - Files
   - `iML1515.mat`: *E. coli* model
   - `BiGG_DB.mat`: BiGG database of reactions
@@ -46,17 +47,27 @@ This repo contains code and files used during a 2 week visit to the LCSB lab. Th
   
 ### 📑 Exercise 5: Results reproduction in NICEgame (AMAOTr)
 - Goal
-  - We previosuly identified AMAOTr as target for gapfilling. Now we knockout this reaction in iML1515, merge with the ATLAS database, generate alternative solutions, and evaluate them (e.g. confusion matrix, growth rate)
+  - We previosuly identified AMAOTr as target for gapfilling. Now we knockout this reaction in iML1515, merge with the ATLAS database, generate alternative solutions, and evaluate them (e.g. confusion matrix components, growth rate)
 - Files
   - `reducedATLAS_ecoli_yeast.mat`: ATLAS subset of reactions involving metabolites in *E. coli* and *S. cerevisiae*
 - Functions
+  - `PrepareForGapFilling()`: inputs GEM and reaction database, outputs merged model
+  - `gapFilling()`: inputs merged model, outputs alternative solutions for gapfilling 
+  - `Essentiality()`:  inputs alternative gapfilling solutions, model, and essentiality experimental data, outputs confusion matrix components (FP, FN, TP, TN) and Matthews correlation coefficient (MCC) for each alternative
+  - `TestFBA_growth()`: inputs merged model and alternative gapfilling solutions, outputs FBA-based growth rates for each alternative
+  - `TestTFBA_growth()`: inputs merged model and alternative gapfilling solutions, outputs TFA-based growth rates for each alternative
   
 ### 🧫 Exercise 6: NICEgame with BIOLOG data
 - Goal
-  - Obtained model + processed biolog growth data on different carbon sources, evaluate metabolite essentiality, choose false negative target for gapfilling (D-Galacturonic-Acid), replace as carbon source, suggest gapfilling alternatives. For one alternative, add the reaction to the model and re-evaluate TP/FP/TN/FN, improve MCC score. Repeat for FP gapfilling target (Arginine).
+  - Obtain model with associated biolog growth data on different carbon sources, evaluate metabolite essentiality by changing the carbon source in base media. Choose false negative target for gapfilling (e.g. D-Galacturonic-Acid), replace as carbon source, suggest gapfilling alternatives. For one alternative, add the reaction to the model and re-evaluate confusion matrix components showing improvement in MCC score.
+  - One false negative target Tween-80 cannot be fixed since there are no reactions that catalyze its degradation, submit this metabolite to ATLASx to suggest degradation routes in Exercise 8.
+  - Fix a false positive target (e.g. Arginine); the model can grow using Arginine as a carbon source but experimental data shows otherwise. In this case we have to identify candidate reactions to knockout that resolve false positive growth without introducing new errors. Find lethal reaction knockouts with Arginine as a carbon source, evaluate confusion matrix components, and identify knockouts that maximise MCC.
 - Files
   - `keggModel.mat`: KEGG reaction database 
 - Functions
+  - `PrepareForGapFilling()`: inputs GEM and reaction database, outputs merged model
+  - `gfbiomass()`: inputs merged model, outputs alternative solutions for gapfilling
+  - `addReaction()`: inputs model and desired reaction to be added, outputs expanded model
   
 ### 🌉 Exercise 7: Submitting a reaction query to the BridgIT server
 - Goal
