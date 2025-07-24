@@ -1,5 +1,7 @@
 # 🏓 NICEgame exercise 🏓
 
+This repo contains code and files used during a 2 week visit to the LCSB lab. The goal was to get hands on experience using the NICEgame workflow to curate metabolic models based on experimental data. Through these exercises we also learn about thermodynamic-based flux analysis (TFA), BridgIT, and ATLASx.
+
 - Exercise 1: matTFA tutorial
     - Basics of converting GEM for TFA, compared TFA and FBA results to show that TFA is more restrictive
 - Exercise 2: NICEgame tutorial
