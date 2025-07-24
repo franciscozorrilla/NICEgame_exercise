@@ -4,6 +4,13 @@ This repo contains code and files used during a 2 week visit to the LCSB lab. Th
 
 - Exercise 1: matTFA tutorial
     - Basics of converting GEM for TFA, compared TFA and FBA results to show that TFA is more restrictive
+    - Key files
+         - thermo_data.mat: database containing chemical information for ~18k compounds (e.g. mass, charge, pKa, deltaG_formation)
+    - Key functions
+         - prepModelforTFA(): inputs model + thermo_data, calculates gibbs energies of reactions, outputs prepared model
+         - convToTFA(): inputs prepared model, adds new thermodynamic constraints based on gibbs energies, outputs converted model
+         - addNetFluxVariables(): inputs converted model, adds net flux variables and constraints to model, outputs TFA-ready model
+         - solveTFAmodelCplex(): inputs TFA-ready model, outputs TFA solution
 - Exercise 2: NICEgame tutorial
     - KO reaction in iML1515, merge model with BiGG database, generate alternative gapfilling solutions
 - Exercise 3: Essentiality prediction
