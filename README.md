@@ -38,6 +38,7 @@ This repo contains code and files used during a 2 week visit to the [EPFL LCSB](
 ### ⚖️ Exercise 4: Essentiality evaluation
 - Goal
   - Obtain experimental data and compare against predictions. False negatives are experimentally dispensible genes predicted to be lethal by gene knockout; these are targets for gapfilling, as this indicates that there must be some other reaction(s) compensating for the knockout. Also compare merged model essentiality to identify rescued reactions (e.g. AMAOTr)
+)
 - Files
   - `experimental_essentiality.tsv`: gene knockout experiment results from [source publication](https://journals.asm.org/doi/10.1128/mbio.02096-17).
   - `gene_table.tsv`: lookup table to convert from publication gene IDs (e.g. glyA) to model gene IDs (e.g. b2551)
@@ -48,6 +49,7 @@ This repo contains code and files used during a 2 week visit to the [EPFL LCSB](
 ### 📑 Exercise 5: Reproduction of result from NICEgame paper (AMAOTr)
 - Goal
   - We previosuly identified AMAOTr as target for gapfilling. Now we knockout this reaction in iML1515, merge with the ATLAS database, generate alternative solutions, and evaluate them (e.g. confusion matrix components, growth rate)
+  - We obtain slightly different values (difference likely due to gene ID matching, publication uses 1470 while we use 1424), but overall very similar MCC scores across alternatives (~0.486) and compared to publication results (~0.487).
 - Files
   - `reducedATLAS_ecoli_yeast.mat`: ATLAS subset of reactions involving metabolites in *E. coli* and *S. cerevisiae*
 - Functions
