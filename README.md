@@ -45,7 +45,7 @@ This repo contains code and files used during a 2 week visit to the [EPFL LCSB](
   - `strcmp()`: used to compare values from predictions and experimental data
   - `readtable()`: used to load data files into MATLAB
   
-### 📑 Exercise 5: Results reproduction in NICEgame (AMAOTr)
+### 📑 Exercise 5: Reproduction of result from NICEgame paper (AMAOTr)
 - Goal
   - We previosuly identified AMAOTr as target for gapfilling. Now we knockout this reaction in iML1515, merge with the ATLAS database, generate alternative solutions, and evaluate them (e.g. confusion matrix components, growth rate)
 - Files
@@ -59,8 +59,9 @@ This repo contains code and files used during a 2 week visit to the [EPFL LCSB](
   
 ### 🧫 Exercise 6: NICEgame with BIOLOG data
 - Goal
-  - Obtain model with associated biolog growth data on different carbon sources, evaluate metabolite essentiality by changing the carbon source in base media. Choose false negative target for gapfilling (e.g. D-Galacturonic-Acid), replace as carbon source, suggest gapfilling alternatives. For one alternative, add the reaction to the model and re-evaluate confusion matrix components showing improvement in MCC score.
-  - Fix a false positive target (e.g. Arginine); the model can grow using Arginine as a carbon source but experimental data shows otherwise. In this case we have to identify candidate reactions to knockout that resolve false positive growth without introducing new errors. Find lethal reaction knockouts with Arginine as a carbon source, evaluate confusion matrix components, and identify knockouts that maximise MCC.
+  - Obtain model with associated biolog growth data on different carbon sources, evaluate metabolite essentiality by changing the carbon source in base media and comparing to experimental results.
+  - False negatives compounds are experimentally viable carbon sources for growth, yet the model is unable to produce biomass, indicating they are targets for gapfilling. Choose false negative (e.g. D-Galacturonic-Acid), replace as carbon source, and suggest gapfilling alternatives. For one alternative, add the reaction to the model and re-evaluate confusion matrix components showing improvement in MCC score.
+  - False positive compounds are not experimentally viable carbon sources for growth, yet the model still produces biomass, indicating that some reaction(s) should be turned off. Fix a false positive target (e.g. Arginine); the model can grow using Arginine as a carbon source but experimental data shows otherwise. In this case we have to identify candidate reactions to knockout that resolve false positive growth without introducing new errors. Find lethal reaction knockouts with Arginine as a carbon source, evaluate confusion matrix components, and identify knockouts that maximise MCC.
 - Files
   - `keggModel.mat`: KEGG reaction database 
 - Functions
@@ -70,7 +71,7 @@ This repo contains code and files used during a 2 week visit to the [EPFL LCSB](
   
 ### 🌉 Exercise 7: Submitting a reaction query to the BridgIT server
 - Goal
-  - Identify E.C. number for [KEGG reaction R00919](https://www.genome.jp/dbget-bin/www_bget?rn:R00919)
+  - Assign E.C. number for a given reaction, e.g. [KEGG reaction R00919](https://www.genome.jp/dbget-bin/www_bget?rn:R00919)
 - Files
   - `R00919.zip`: zipfile for submission to BridgIT server, contains the following
      - `molfiles/`: folder with a .mol file for each metabolite involved in the query reaction, downloaded from KEGG (e.g. [Propanoyl-CoA](https://www.genome.jp/entry/C00100))
@@ -96,7 +97,11 @@ This repo contains code and files used during a 2 week visit to the [EPFL LCSB](
 - Input
    - Tween-80 LCSB compound ID: 1467972114 
 - Server
-   - https://lcsb-databases.epfl.ch/Atlas2/Analysis  
+   - https://lcsb-databases.epfl.ch/Atlas2/Analysis
+- Status
+   - submitted to KEGG: blank result
+   - submitted to bioATLAS: https://lcsb-databases.epfl.ch/Atlas2/GetResults/7828591
+   - submitted to chemATLAS: https://lcsb-databases.epfl.ch/Atlas2/GetResults/4430457
 
 ## Requirements
 
