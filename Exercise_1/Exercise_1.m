@@ -1,4 +1,4 @@
-%% Exercise 1
+%% Exercise #1
 % Note: This tutorial is directly borrowed from the matTFA repo, with some minor 
 % modifications (see <https://github.com/EPFL-LCSB/matTFA/blob/master/tutorials/tutorial.m 
 % script>).
