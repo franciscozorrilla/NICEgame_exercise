@@ -1,0 +1,11 @@
+### 🗺️ Exercise 8: Submitting a metabolite query to the ATLASx server
+- Goal
+  - One false negative target from Exercise 6, Tween-80, cannot be fixed since there are no reactions that catalyze its degradation, submit this metabolite to ATLASx to suggest degradation routes in Exercise 8.
+- Input
+   - Tween-80 LCSB compound ID: 1467972114 
+- Server
+   - https://lcsb-databases.epfl.ch/Atlas2/Analysis
+- Status
+   - submitted to KEGG: blank result
+   - submitted to bioATLAS: https://lcsb-databases.epfl.ch/Atlas2/GetResults/7828591
+   - submitted to chemATLAS: https://lcsb-databases.epfl.ch/Atlas2/GetResults/4430457
