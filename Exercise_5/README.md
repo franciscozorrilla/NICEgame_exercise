@@ -9,3 +9,5 @@
   - `PrepareForGapFilling()`: inputs GEM and reaction database, outputs merged model
   - `gfbiomass()`: inputs merged model, outputs alternative solutions for gapfilling
   - `addReaction()`: inputs model and desired reaction to be added, outputs expanded model
+
+[Next exercise](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_6)
