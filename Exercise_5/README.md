@@ -1,4 +1,4 @@
-### 🧫 Exercise 5: NICEgame with BIOLOG data
+### 🧫 Exercise 5: NICEgame with biolog data
 - Goal
   - Obtain model with associated biolog growth data on different carbon sources, evaluate metabolite essentiality by changing the carbon source in base media and comparing to experimental results.
   - Fixing false negatives: FN compounds are experimentally viable carbon sources for growth, yet the model is unable to produce biomass, indicating they are targets for gapfilling. Choose false negative (e.g. D-Galacturonic-Acid), replace as carbon source, and suggest gapfilling alternatives. For one alternative, add the reaction to the model and re-evaluate confusion matrix components showing improvement in MCC score.
