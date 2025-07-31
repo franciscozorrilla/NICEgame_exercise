@@ -1,12 +1,11 @@
-### 📑 Exercise 5: Reproduction of result from NICEgame paper (AMAOTr)
+### 🧫 Exercise 5: NICEgame with BIOLOG data
 - Goal
-  - We previosuly identified AMAOTr as target for gapfilling. Now we knockout this reaction in iML1515, merge with the ATLAS database, generate alternative solutions, and evaluate them (e.g. confusion matrix components, growth rate)
-  - We obtain slightly different values (difference likely due to gene ID matching, publication uses 1470 while we use 1424), but overall very similar MCC scores across alternatives (~0.486) and compared to publication results (~0.487).
+  - Obtain model with associated biolog growth data on different carbon sources, evaluate metabolite essentiality by changing the carbon source in base media and comparing to experimental results.
+  - Fixing false negatives: FN compounds are experimentally viable carbon sources for growth, yet the model is unable to produce biomass, indicating they are targets for gapfilling. Choose false negative (e.g. D-Galacturonic-Acid), replace as carbon source, and suggest gapfilling alternatives. For one alternative, add the reaction to the model and re-evaluate confusion matrix components showing improvement in MCC score.
+  - Fixing false positives: FP compounds are not experimentally viable carbon sources for growth, yet the model still produces biomass, indicating that some reaction(s) should be turned off. Fix a false positive target (e.g. Arginine); the model can grow using Arginine as a carbon source but experimental data shows otherwise. In this case we have to identify candidate reactions to knockout that resolve false positive growth without introducing new errors. Find lethal reaction knockouts with Arginine as a carbon source, evaluate confusion matrix components, and identify knockouts that maximise MCC.
 - Files
-  - `reducedATLAS_ecoli_yeast.mat`: ATLAS subset of reactions involving metabolites in *E. coli* and *S. cerevisiae*
+  - `keggModel.mat`: KEGG reaction database 
 - Functions
   - `PrepareForGapFilling()`: inputs GEM and reaction database, outputs merged model
-  - `gapFilling()`: inputs merged model, outputs alternative solutions for gapfilling 
-  - `Essentiality()`:  inputs alternative gapfilling solutions, model, and essentiality experimental data, outputs confusion matrix components (FP, FN, TP, TN) and Matthews correlation coefficient (MCC) for each alternative
-  - `TestFBA_growth()`: inputs merged model and alternative gapfilling solutions, outputs FBA-based growth rates for each alternative
-  - `TestTFBA_growth()`: inputs merged model and alternative gapfilling solutions, outputs TFA-based growth rates for each alternative
+  - `gfbiomass()`: inputs merged model, outputs alternative solutions for gapfilling
+  - `addReaction()`: inputs model and desired reaction to be added, outputs expanded model
