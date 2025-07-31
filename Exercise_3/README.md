@@ -13,3 +13,5 @@
   - `thermoSingleGeneDeletion()`: inputs model, runs TFA-based single gene knockout, returns lethal gene knockouts
   - `strcmp()`: used to compare values from predictions and experimental data
   - `readtable()`: used to load data files into MATLAB
+
+[Next exercise](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_4)
