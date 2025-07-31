@@ -9,3 +9,5 @@
   - `addNetFluxVariables()`: inputs converted model, adds net flux variables and constraints to model, outputs TFA-ready model
   - `solveTFAmodelCplex()`: inputs TFA-ready model, outputs TFA solution
   - `optimizeCbModel()`: inputs FBA model, outputs FBA solution
+
+[Next exercise](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_2)
