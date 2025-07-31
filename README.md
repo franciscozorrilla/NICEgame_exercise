@@ -4,12 +4,11 @@ This repo contains code and files used during a 2 week visit to the [EPFL LCSB](
 
 #### 🌡️ [Exercise 1](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_1): matTFA tutorial
 #### 🐤 [Exercise 2](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_2): NICEgame tutorial
-#### 💻 [Exercise 3](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_3): Essentiality prediction
-#### ⚖️ [Exercise 4](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_4): Essentiality evaluation
-#### 📑 [Exercise 5](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_5): Reproduction of result from NICEgame paper (AMAOTr)
-#### 🧫 [Exercise 6](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_6): NICEgame with BIOLOG data
-#### 🌉 [Exercise 7](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_7): Submitting a reaction query to the BridgIT server
-#### 🗺️ [Exercise 8](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_8): Submitting a metabolite query to the ATLASx server
+#### 💻 [Exercise 3](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_3): Essentiality prediction & evaluation
+#### 📑 [Exercise 4](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_4): Reproduction of result from NICEgame paper (AMAOTr)
+#### 🧫 [Exercise 5](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_5): NICEgame with BIOLOG data
+#### 🌉 [Exercise 6](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_6): Submitting a reaction query to the BridgIT server
+#### 🗺️ [Exercise 7](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_7): Submitting a metabolite query to the ATLASx server
 
 ## Requirements
 
