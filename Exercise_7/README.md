@@ -1,19 +1,11 @@
-### 🌉 Exercise 7: Submitting a reaction query to the BridgIT server
+### 🗺️ Exercise 7: Submitting a metabolite query to the ATLASx server
 - Goal
-  - Assign E.C. number for a given reaction, e.g. [KEGG reaction R00919](https://www.genome.jp/dbget-bin/www_bget?rn:R00919)
-- Files
-  - `R00919.zip`: zipfile for submission to BridgIT server, contains the following
-     - `molfiles/`: folder with a .mol file for each metabolite involved in the query reaction, downloaded from KEGG (e.g. [Propanoyl-CoA](https://www.genome.jp/entry/C00100))
-         - `C00005.mol`: NADPH
-         - `C00006.mol`: NADP+
-         - `C00080.mol`: H+
-         - `C00100.mol`: Propanoyl-CoA
-         - `C00894.mol`: Propenoyl-CoA
-     - `test_systemfile.txt`: textfile specifying reaction string
-        ```
-        COMPOUNDS
-        ENTRY
-        reactionsS
-        ENTRY;KEGG;EQUATION;OPERATORS
-        1;;C00100+C00006<=>C00894+C00005+C00080;
-        ```
+  - One false negative target from Exercise 6, Tween-80, cannot be fixed since there are no reactions that catalyze its degradation, submit this metabolite to ATLASx to suggest degradation routes in Exercise 8.
+- Input
+   - Tween-80 LCSB compound ID: 1467972114 
+- Server
+   - https://lcsb-databases.epfl.ch/Atlas2/Analysis
+- Status
+   - submitted to KEGG: blank result
+   - submitted to bioATLAS: https://lcsb-databases.epfl.ch/Atlas2/GetResults/7828591
+   - submitted to chemATLAS: https://lcsb-databases.epfl.ch/Atlas2/GetResults/4430457
