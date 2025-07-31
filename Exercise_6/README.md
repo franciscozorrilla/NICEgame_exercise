@@ -17,3 +17,4 @@
         ENTRY;KEGG;EQUATION;OPERATORS
         1;;C00100+C00006<=>C00894+C00005+C00080;
         ```
+[Next exercise](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_7)
