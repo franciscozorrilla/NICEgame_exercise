@@ -7,3 +7,5 @@
 - Functions
   - `PrepareForGapFilling()`: inputs GEM and reaction database, outputs merged model
   - `gapFilling()`: inputs merged model, outputs alternative solutions for gapfilling
+
+[Next exercise](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_3)
