@@ -11,3 +11,6 @@
   - `addReaction()`: inputs model and desired reaction to be added, outputs expanded model
 
 [Next exercise](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_6)
+
+### ⚠️ Note
+- the model file and experimental data used in this exercise will be released once the associated paper is submitted for publication
