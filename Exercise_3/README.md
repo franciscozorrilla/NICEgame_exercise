@@ -14,6 +14,8 @@
   - `strcmp()`: used to compare values from predictions and experimental data
   - `readtable()`: used to load data files into MATLAB
 
+[Next exercise](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_4)
+
 ### 🐛 Bug report
 - Issue
   - Merged model triggers error when running `thermoSingleRxnDeletion()`, possibly related to overly constrained thermo parameters?
@@ -34,5 +36,3 @@
    ```
 - Workaround
   - Turn on essentiality and thermo flags when running `PrepareForGapFilling`, this runs TFA-based reaction essentiality in original and merged models, based on which it identifies rescued reactions.
-
-[Next exercise](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_4)
