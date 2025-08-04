@@ -13,7 +13,9 @@
   - `thermoSingleGeneDeletion()`: inputs model, runs TFA-based single gene knockout, returns lethal gene knockouts
   - `strcmp()`: used to compare values from predictions and experimental data
   - `readtable()`: used to load data files into MATLAB
-- Issues
+
+### 🐛 Bug report
+- Issue
   - Merged model triggers error when running `thermoSingleRxnDeletion()`, possibly related to overly constrained thermo parameters?
    ```MATLAB
    % Run single command rxn essentiality - TFA based
@@ -30,5 +32,7 @@
   Error in thermoSingleRxnDeletion (line 82)
   Jzrxns = model.rxns(solWTtfa.x(indNF)<1E-8);
    ```
+- Workaround
+  - Turn on essentiality and thermo flags when running `PrepareForGapFilling`, this runs TFA-based reaction essentiality in original and merged models, based on which it identifies rescued reactions.
 
 [Next exercise](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_4)
