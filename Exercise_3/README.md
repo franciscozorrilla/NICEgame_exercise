@@ -13,5 +13,22 @@
   - `thermoSingleGeneDeletion()`: inputs model, runs TFA-based single gene knockout, returns lethal gene knockouts
   - `strcmp()`: used to compare values from predictions and experimental data
   - `readtable()`: used to load data files into MATLAB
+- Issues
+  - Merged model triggers error when running `thermoSingleRxnDeletion()`, possibly related to overly constrained thermo parameters?
+   ```MATLAB
+   % Run single command rxn essentiality - TFA based
+  [grRatioM, grRateKOM, grRateWTM, hasEffectM, delRxnsM, fluxSolutionM, impactTasksM] = thermoSingleRxnDeletion(GFmodel);
+  
+  No field cplex.Solution.x
+  Warning: The solver does not return a solution! 
+  > In solveTFBAmodelCplex>x_solveCplex (line 93)
+  In solveTFBAmodelCplex (line 50)
+  In optimizeThermoModel (line 27)
+  In thermoSingleRxnDeletion (line 81) 
+  Index exceeds the number of array elements (0).
+  
+  Error in thermoSingleRxnDeletion (line 82)
+  Jzrxns = model.rxns(solWTtfa.x(indNF)<1E-8);
+   ```
 
 [Next exercise](https://github.com/franciscozorrilla/NICEgame_exercise/tree/master/Exercise_4)
