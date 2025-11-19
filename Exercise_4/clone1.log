@@ -1,0 +1,179 @@
+
+Log for 'fba' Clone_1 (V12.10.0.0) Wed Nov 19 10:35:33 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 744 rows and 992 columns.
+Aggregator did 273 substitutions.
+Reduced LP has 1155 rows, 14010 columns, and 60172 nonzeros.
+Presolve time = 0.02 sec. (19.67 ticks)
+Parallel mode: using up to 10 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 42763
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.01 sec. (11.95 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 10
+  Rows in Factor            = 1155
+  Integer space required    = 9302
+  Total non-zeros in factor = 89513
+  Total FP ops to factor    = 14785403
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0  -1.0857586e+02  -2.6783113e+06  1.55e+06  1.70e+06  1.20e+02  1.00e+00
+   1  -2.2222563e+01  -3.0996336e+05  4.28e+05  4.70e+05  1.39e+01  4.52e-02
+   2  -2.1550550e+00  -8.2802983e+04  1.25e+05  1.37e+05  3.71e+00  1.36e-01
+   3  -1.4588919e+00  -1.0875778e+04  1.20e+04  1.32e+04  4.87e-01  1.05e+00
+   4  -4.0954825e+00  -5.4621244e+03  2.92e+03  3.20e+03  2.45e-01  2.21e+00
+   5  -4.9779652e+01  -4.3558819e+03  2.24e+03  2.46e+03  1.93e-01  2.95e+00
+   6  -3.8180912e+01  -4.0049479e+03  2.07e+03  2.27e+03  1.78e-01  3.20e+00
+   7  -4.9964737e+01  -4.9146718e+02  7.89e+02  8.66e+02  1.96e-02  3.21e+01
+   8  -4.9996015e+01  -5.8138153e+01  1.02e+01  1.12e+01  3.61e-04  1.77e+03
+   9  -4.9999960e+01  -5.0133851e+01  1.04e-01  1.14e-01  5.94e-06  1.09e+05
+  10  -5.0000000e+01  -5.0001466e+01  1.05e-03  1.15e-03  6.50e-08  1.00e+07
+  11  -5.0000000e+01  -5.0000015e+01  1.49e-05  1.16e-05  6.65e-10  9.83e+08
+  12  -5.0000000e+01  -5.0000000e+01  7.45e-06  1.17e-07  6.79e-12  9.72e+10
+  13  -5.0000000e+01  -5.0000000e+01  4.99e-06  1.26e-09  9.26e-14  9.38e+12
+Barrier time = 18.05 sec. (65.24 ticks)
+Parallel mode: deterministic, using up to 10 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Dual crossover.
+  Dual:  Fixing 20 variables.
+       19 DMoves:  Infeasibility  2.95319325e-14  Objective -5.00000000e+01
+
+Log for 'fba' Clone_1 (V12.10.0.0) Wed Nov 19 10:35:51 2025
+
+
+Primal crossover.
+  Primal:  Fixing 12901 variables.
+        0 DMoves:  Infeasibility  1.11022302e-16  Objective -5.00000000e+01
+  Dual:  Pushed 18, exchanged 2.
+    12900 PMoves:  Infeasibility  8.19264212e-10  Objective -5.00000000e+01
+    12810 PMoves:  Infeasibility  8.19286229e-10  Objective -5.00000000e+01
+  Primal:  Fixing 12890 variables.
+    12889 PMoves:  Infeasibility  7.23865412e-14  Objective -5.00000000e+01
+    12810 PMoves:  Infeasibility  7.46069873e-14  Objective -5.00000000e+01
+    12661 PMoves:  Infeasibility  8.19288450e-10  Objective -5.00000000e+01
+    12666 PMoves:  Infeasibility  3.55271368e-14  Objective -5.00000000e+01
+    12437 PMoves:  Infeasibility  8.19310869e-10  Objective -5.00000000e+01
+    12490 PMoves:  Infeasibility  6.48370246e-14  Objective -5.00000000e+01
+    12231 PMoves:  Infeasibility  8.19313950e-10  Objective -5.00000000e+01
+    12289 PMoves:  Infeasibility  1.00364161e-13  Objective -5.00000000e+01
+    12066 PMoves:  Infeasibility  8.19324608e-10  Objective -5.00000000e+01
+    12184 PMoves:  Infeasibility  8.97060204e-14  Objective -5.00000000e+01
+    11913 PMoves:  Infeasibility  8.34887715e-14  Objective -5.00000000e+01
+    12051 PMoves:  Infeasibility  7.63833441e-14  Objective -5.00000000e+01
+    11757 PMoves:  Infeasibility  3.28626015e-14  Objective -5.00000000e+01
+    11904 PMoves:  Infeasibility  6.21724894e-14  Objective -5.00000000e+01
+    11627 PMoves:  Infeasibility  7.10542736e-14  Objective -5.00000000e+01
+    11577 PMoves:  Infeasibility  6.26165786e-14  Objective -5.00000000e+01
+    11263 PMoves:  Infeasibility  2.70894418e-14  Objective -5.00000000e+01
+    11325 PMoves:  Infeasibility  6.48370246e-14  Objective -5.00000000e+01
+    10998 PMoves:  Infeasibility  3.06421555e-14  Objective -5.00000000e+01
+    11051 PMoves:  Infeasibility  5.77315973e-14  Objective -5.00000000e+01
+    10742 PMoves:  Infeasibility  3.41948692e-14  Objective -5.00000000e+01
+    10782 PMoves:  Infeasibility  7.46069873e-14  Objective -5.00000000e+01
+    10446 PMoves:  Infeasibility  2.70894418e-14  Objective -5.00000000e+01
+    10517 PMoves:  Infeasibility  7.63833441e-14  Objective -5.00000000e+01
+    10065 PMoves:  Infeasibility  2.70894418e-14  Objective -5.00000000e+01
+    10202 PMoves:  Infeasibility  6.75015599e-14  Objective -5.00000000e+01
+     9724 PMoves:  Infeasibility  8.03801470e-14  Objective -5.00000000e+01
+     9930 PMoves:  Infeasibility  8.17124146e-14  Objective -5.00000000e+01
+     9460 PMoves:  Infeasibility  5.19584376e-14  Objective -5.00000000e+01
+     9623 PMoves:  Infeasibility  4.61852778e-14  Objective -5.00000000e+01
+     9159 PMoves:  Infeasibility  4.84057239e-14  Objective -5.00000000e+01
+     9326 PMoves:  Infeasibility  3.01980663e-14  Objective -5.00000000e+01
+     8874 PMoves:  Infeasibility  4.48530102e-14  Objective -5.00000000e+01
+     9062 PMoves:  Infeasibility  2.48689958e-14  Objective -5.00000000e+01
+     8573 PMoves:  Infeasibility  4.48530102e-14  Objective -5.00000000e+01
+     8797 PMoves:  Infeasibility  6.03961325e-14  Objective -5.00000000e+01
+     8250 PMoves:  Infeasibility  5.19584376e-14  Objective -5.00000000e+01
+     8457 PMoves:  Infeasibility  4.61852778e-14  Objective -5.00000000e+01
+     7976 PMoves:  Infeasibility  2.53130850e-14  Objective -5.00000000e+01
+     8166 PMoves:  Infeasibility  6.03961325e-14  Objective -5.00000000e+01
+     7743 PMoves:  Infeasibility  4.48530102e-14  Objective -5.00000000e+01
+     7850 PMoves:  Infeasibility  2.48689958e-14  Objective -5.00000000e+01
+     7400 PMoves:  Infeasibility  5.90638649e-14  Objective -5.00000000e+01
+     7172 PMoves:  Infeasibility  5.37347944e-14  Objective -5.00000000e+01
+     7537 PMoves:  Infeasibility  2.48689958e-14  Objective -5.00000000e+01
+     6937 PMoves:  Infeasibility  5.19584376e-14  Objective -5.00000000e+01
+     7266 PMoves:  Infeasibility  3.90798505e-14  Objective -5.00000000e+01
+     6653 PMoves:  Infeasibility  9.90318938e-14  Objective -5.00000000e+01
+     7070 PMoves:  Infeasibility  6.75015599e-14  Objective -5.00000000e+01
+     6373 PMoves:  Infeasibility  8.74855743e-14  Objective -5.00000000e+01
+     6735 PMoves:  Infeasibility  1.03028697e-13  Objective -5.00000000e+01
+     6129 PMoves:  Infeasibility  8.21565038e-14  Objective -5.00000000e+01
+     5839 PMoves:  Infeasibility  1.03472786e-13  Objective -5.00000000e+01
+     6449 PMoves:  Infeasibility  5.68434189e-14  Objective -5.00000000e+01
+     5589 PMoves:  Infeasibility  1.14130927e-13  Objective -5.00000000e+01
+     6168 PMoves:  Infeasibility  3.55271368e-14  Objective -5.00000000e+01
+     5356 PMoves:  Infeasibility  7.32747196e-14  Objective -5.00000000e+01
+     5823 PMoves:  Infeasibility  3.55271368e-14  Objective -5.00000000e+01
+     5096 PMoves:  Infeasibility  9.45910017e-14  Objective -5.00000000e+01
+     5543 PMoves:  Infeasibility  1.77635684e-14  Objective -5.00000000e+01
+     4855 PMoves:  Infeasibility  7.99360578e-14  Objective -5.00000000e+01
+     4616 PMoves:  Infeasibility  8.34887715e-14  Objective -5.00000000e+01
+     5297 PMoves:  Infeasibility  3.19744231e-14  Objective -5.00000000e+01
+     4394 PMoves:  Infeasibility  9.01501096e-14  Objective -5.00000000e+01
+     5098 PMoves:  Infeasibility  1.42108547e-14  Objective -5.00000000e+01
+     4149 PMoves:  Infeasibility  7.61612995e-14  Objective -5.00000000e+01
+     4892 PMoves:  Infeasibility  1.42108547e-14  Objective -5.00000000e+01
+     3917 PMoves:  Infeasibility  7.41628980e-14  Objective -5.00000000e+01
+     4619 PMoves:  Infeasibility  1.42108547e-14  Objective -5.00000000e+01
+     3626 PMoves:  Infeasibility  6.88338275e-14  Objective -5.00000000e+01
+     4394 PMoves:  Infeasibility  8.88178420e-15  Objective -5.00000000e+01
+     3391 PMoves:  Infeasibility  6.52811138e-14  Objective -5.00000000e+01
+     4188 PMoves:  Infeasibility  8.88178420e-15  Objective -5.00000000e+01
+     3093 PMoves:  Infeasibility  8.30446822e-14  Objective -5.00000000e+01
+     3883 PMoves:  Infeasibility  1.77635684e-14  Objective -5.00000000e+01
+     2692 PMoves:  Infeasibility  8.30446822e-14  Objective -5.00000000e+01
+     3669 PMoves:  Infeasibility  2.13162821e-14  Objective -5.00000000e+01
+     2554 PMoves:  Infeasibility  6.88338275e-14  Objective -5.00000000e+01
+     2358 PMoves:  Infeasibility  2.97539771e-14  Objective -5.00000000e+01
+     3377 PMoves:  Infeasibility  1.42108547e-14  Objective -5.00000000e+01
+     2258 PMoves:  Infeasibility  1.90958360e-14  Objective -5.00000000e+01
+     2968 PMoves:  Infeasibility  1.42108547e-14  Objective -5.00000000e+01
+     2124 PMoves:  Infeasibility  3.33066907e-14  Objective -5.00000000e+01
+     2762 PMoves:  Infeasibility  1.42108547e-14  Objective -5.00000000e+01
+     1963 PMoves:  Infeasibility  2.62012634e-14  Objective -5.00000000e+01
+     2640 PMoves:  Infeasibility  1.06581410e-14  Objective -5.00000000e+01
+     1809 PMoves:  Infeasibility  1.19904087e-14  Objective -5.00000000e+01
+     2476 PMoves:  Infeasibility  1.77635684e-14  Objective -5.00000000e+01
+     1650 PMoves:  Infeasibility  2.97539771e-14  Objective -5.00000000e+01
+     2299 PMoves:  Infeasibility  2.48689958e-14  Objective -5.00000000e+01
+     1507 PMoves:  Infeasibility  3.33066907e-14  Objective -5.00000000e+01
+     2171 PMoves:  Infeasibility  2.13162821e-14  Objective -5.00000000e+01
+     1322 PMoves:  Infeasibility  3.68594044e-14  Objective -5.00000000e+01
+     2033 PMoves:  Infeasibility  3.55271368e-14  Objective -5.00000000e+01
+     1176 PMoves:  Infeasibility  4.04121181e-14  Objective -5.00000000e+01
+     1917 PMoves:  Infeasibility  2.13162821e-14  Objective -5.00000000e+01
+     1028 PMoves:  Infeasibility  1.19904087e-14  Objective -5.00000000e+01
+     1792 PMoves:  Infeasibility  1.42108547e-14  Objective -5.00000000e+01
+     1658 PMoves:  Infeasibility  2.84217094e-14  Objective -5.00000000e+01
+      854 PMoves:  Infeasibility  4.88498131e-15  Objective -5.00000000e+01
+     1507 PMoves:  Infeasibility  2.84217094e-14  Objective -5.00000000e+01
+      709 PMoves:  Infeasibility  4.88498131e-15  Objective -5.00000000e+01
+     1372 PMoves:  Infeasibility  2.84217094e-14  Objective -5.00000000e+01
+      564 PMoves:  Infeasibility  5.15143483e-14  Objective -5.00000000e+01
+     1225 PMoves:  Infeasibility  2.13162821e-14  Objective -5.00000000e+01
+      415 PMoves:  Infeasibility  2.13162821e-14  Objective -5.00000000e+01
+     1049 PMoves:  Infeasibility  0.00000000e+00  Objective -5.00000000e+01
+      284 PMoves:  Infeasibility  1.42108547e-14  Objective -5.00000000e+01
+      892 PMoves:  Infeasibility  1.42108547e-14  Objective -5.00000000e+01
+      156 PMoves:  Infeasibility  0.00000000e+00  Objective -5.00000000e+01
+      719 PMoves:  Infeasibility  2.13162821e-14  Objective -5.00000000e+01
+       39 PMoves:  Infeasibility  0.00000000e+00  Objective -5.00000000e+01
+        0 PMoves:  Infeasibility  0.00000000e+00  Objective -5.00000000e+01
+  Primal:  Pushed 2233, exchanged 10657.
+      567 PMoves:  Infeasibility  2.13162821e-14  Objective -5.00000000e+01
+
+Dual simplex solved model.
+
+
+Dual simplex solved model.
+
+Total crossover time = 0.09 sec. (125.62 ticks)
+
+Total time on 10 threads = 18.16 sec. (306.65 ticks)
+
+Barrier solved model.
+

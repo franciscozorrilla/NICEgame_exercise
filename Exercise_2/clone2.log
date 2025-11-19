@@ -1,0 +1,104 @@
+
+Log for 'fba' Clone_2 (V12.10.0.0) Tue Nov 18 17:15:32 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1791 rows and 2863 columns.
+Aggregator did 1167 substitutions.
+Reduced LP has 1302 rows, 3007 columns, and 13327 nonzeros.
+Presolve time = 0.01 sec. (13.79 ticks)
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         20108.860000
+Iteration:   139    Infeasibility =          6641.296487
+Iteration:   277    Infeasibility =          4131.114564
+Iteration:   405    Infeasibility =          2955.001918
+Iteration:   547    Infeasibility =          2070.395882
+Iteration:   680    Infeasibility =          1641.649212
+Iteration:   815    Infeasibility =          1307.124529
+Iteration:   949    Infeasibility =          1079.361190
+Iteration:  1072    Infeasibility =           925.300017
+Iteration:  1194    Infeasibility =           838.379897
+Iteration:  1334    Infeasibility =           669.492571
+Iteration:  1473    Infeasibility =           484.163644
+Iteration:  1609    Infeasibility =           444.163788
+Iteration:  1744    Infeasibility =           335.462720
+Switched to devex.
+Iteration:  1875    Infeasibility =           247.204005
+Iteration:  1995    Infeasibility =           169.113894
+Iteration:  2120    Infeasibility =            55.425996
+Iteration:  2236    Infeasibility =            34.221561
+Iteration:  2360    Infeasibility =            16.620223
+Iteration:  2425    Objective     =             0.000000
+Iteration:  2517    Objective     =             0.000000
+
+Dual simplex solved model.
+
+
+Log for 'fba' Clone_2 (V12.10.0.0) Tue Nov 18 17:18:57 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1837 rows and 3009 columns.
+Aggregator did 1160 substitutions.
+Reduced LP has 1263 rows, 2963 columns, and 14164 nonzeros.
+Presolve time = 0.01 sec. (14.45 ticks)
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         20683.860000
+Iteration:   101    Infeasibility =          6700.563208
+Iteration:   193    Infeasibility =          4311.327278
+Iteration:   280    Infeasibility =          3522.514086
+Iteration:   368    Infeasibility =          2948.558225
+Iteration:   466    Infeasibility =          2284.799013
+Iteration:   559    Infeasibility =          2065.986659
+Iteration:   653    Infeasibility =          1703.110189
+Iteration:   747    Infeasibility =          1392.036661
+Iteration:   845    Infeasibility =          1225.935640
+Iteration:   953    Infeasibility =          1046.365028
+Iteration:  1057    Infeasibility =           985.390076
+Iteration:  1154    Infeasibility =           839.347439
+Iteration:  1256    Infeasibility =           738.323650
+Iteration:  1355    Infeasibility =           642.171001
+Iteration:  1457    Infeasibility =           514.343502
+Iteration:  1552    Infeasibility =           429.953758
+Iteration:  1652    Infeasibility =           389.090231
+
+Dual simplex solved model.
+
+
+Log for 'fba' Clone_2 (V12.10.0.0) Tue Nov 18 17:18:57 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1790 rows and 2958 columns.
+Aggregator did 1172 substitutions.
+Reduced LP has 1298 rows, 3002 columns, and 14567 nonzeros.
+Presolve time = 0.01 sec. (14.80 ticks)
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         22275.020000
+Iteration:   116    Infeasibility =          7234.710377
+Iteration:   214    Infeasibility =          5637.026273
+Iteration:   304    Infeasibility =          4768.165226
+Iteration:   392    Infeasibility =          4050.064126
+Iteration:   476    Infeasibility =          3424.575442
+Iteration:   555    Infeasibility =          3173.198481
+Iteration:   642    Infeasibility =          2874.142172
+Iteration:   731    Infeasibility =          2584.865622
+Iteration:   814    Infeasibility =          2216.735373
+Iteration:   897    Infeasibility =          2019.171472
+Iteration:   984    Infeasibility =          1834.378160
+Iteration:  1075    Infeasibility =          1654.455569
+Iteration:  1170    Infeasibility =          1399.110461
+Iteration:  1264    Infeasibility =          1175.662678
+Iteration:  1363    Infeasibility =          1072.041944
+Iteration:  1461    Infeasibility =          1009.864097
+Iteration:  1553    Infeasibility =           902.454188
+Iteration:  1644    Infeasibility =           769.673545
+Iteration:  1741    Infeasibility =           699.918403
+Iteration:  1831    Infeasibility =           503.971863
+Switched to devex.
+Iteration:  1920    Infeasibility =           400.251124
+Iteration:  2021    Infeasibility =           238.828399
+Iteration:  2115    Infeasibility =           212.591324
+
+Dual simplex solved model.
+
